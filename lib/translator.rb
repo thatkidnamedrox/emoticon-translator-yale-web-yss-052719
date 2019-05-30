@@ -9,7 +9,7 @@ def load_library(file_path)
   emoticons["get_meaning"] = {}
   emoticons["get_emoticon"] = {}
   library.each do |meaning, emoticons|
-    puts emoticons.inspect
+    emoticons["get_meaning"]["hello"] = 0
   end
   puts emoticons
   emoticons
