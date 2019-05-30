@@ -4,14 +4,13 @@ require "yaml"
 
 def load_library(file_path)
   # code goes here
-  emoticons = YAML.load_file(file_path)
-  emoticons = emoticons.map do |meaning, emoticons|
-    {
-      "get_meaning"=>
-        { emoticons.last => meaning },
-      "get_emoticon"=>
-        { emoticons.first => emoticons.last }
-    }
+  library = YAML.load_file(file_path)
+  emoticons = {}
+  emoticons["get_meaning"] = {}
+  emotcions["get_emoticon"] = {}
+  library.each do |meaning, emoticons|
+    emoticons["get_meaning"][emoticons.last] = meaning
+    emoticons["get_emotion"][emoticons.first] = emoticons.last
   end
   puts emoticons
   emoticons
