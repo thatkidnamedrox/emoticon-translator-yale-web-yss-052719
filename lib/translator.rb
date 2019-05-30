@@ -9,7 +9,7 @@ def load_library(file_path)
     {
       "get_meaning"=>meaning,
       "get_emoticon"=>
-        emoticons.first => emoticons.last
+        { emoticons.first => emoticons.last }
     }
   end
   puts emoticons
