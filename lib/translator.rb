@@ -11,7 +11,7 @@ def load_library(file_path)
   library.each do |meaning, emoticons|
     puts emoticons.inspect
     emoticons["get_meaning"]
-    emoticons["get_emotion"]
+    emoticons["get_emoticon"]
   end
   puts emoticons
   emoticons
