@@ -8,8 +8,9 @@ def load_library(file_path)
   emoticons = {}
   emoticons["get_meaning"] = {}
   emoticons["get_emoticon"] = {}
-  library.each do |meaning, emoticons|
-    emoticons["get_meaning"]["hello"] = 0
+  library.each do |meaning, jap_eng_emoticons|
+    emoticons["get_meaning"][jap_eng_emoticons.last] = meaning
+    emoticons["get_emoticon"][jap_eng_emoticons.first] = jap_eng_emoticons.last
   end
   puts emoticons
   emoticons
