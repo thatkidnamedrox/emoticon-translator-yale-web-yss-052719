@@ -12,7 +12,6 @@ def load_library(file_path)
     emoticons["get_meaning"][jap_eng_emoticons.last] = meaning
     emoticons["get_emoticon"][jap_eng_emoticons.first] = jap_eng_emoticons.last
   end
-  puts emoticons
   emoticons
 end
 
