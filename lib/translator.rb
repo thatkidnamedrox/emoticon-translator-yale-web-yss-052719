@@ -8,6 +8,8 @@ def load_library(file_path)
   emoticons = emoticons.map do |meaning, emoticons|
     { "get_meaning"=>meaning, "get_emoticon"=>emoticons }
   end
+  puts emoticons
+  emoticons
 end
 
 def get_japanese_emoticon
